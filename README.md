@@ -46,6 +46,7 @@ Skywhisper+ turns decades of NASA datasets into **actionable probabilities** (e.
   Prototype: https://www.figma.com/make/M7HhzhhuwtKWbSf4x5g25Q/Weather-Dashboard-Prototype?node-id=0-4&t=8b0fFihGjG30bISK-1
 - **Main Plan (canonical)**: The authoritative plan, UX flows, and requirements live in **Google Drive** →  https://drive.google.com/drive/folders/17gY5buTk7rH2Qgmaeid5F-SfQCC5Zc9O 
 - **Gamma AI**: Lightweight **illustrations, icons, and hero images** for dashboards and docs that communicate risk levels clearly.
+- canva for video making 
 
 🧱 Tech stack
 
