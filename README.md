@@ -1,97 +1,140 @@
-# Skywhisper
+🌤 SkyWhisper
 
-> **Status:** Prototype 🚧 — Actively evolving. We’re iterating on data coverage, model accuracy, and UX. Expect changes and breaking updates.
+NASA-Powered Long-Term Weather Insights & Preparedness Dashboard
+
+🚧 Status: Prototype — Actively evolving
+We’re iterating on data coverage, model accuracy, and UX. Expect changes and breaking updates.
+
+✨ Overview
+
+SkyWhisper transforms decades of NASA Earth observation datasets into actionable probabilities and plain-language preparedness tips. It helps people anticipate extreme weather events (heat, rainfall, wind, humidity, cloud cover) and make informed lifestyle or policy decisions.
+
+Example insights:
+
+“65% chance of >35°C in April — stay hydrated.”
+
+“80% likelihood of heavy rain in July — carry an umbrella, secure belongings, avoid low-lying areas.”
+
+Unlike real-time alerts, SkyWhisper focuses on long-term patterns and seasonal probabilities to support preparedness, planning, and resilience.
+
+🚀 Features
+
+📊 Extreme Weather Probabilities — by location, timeframe, and variable (heat, rainfall, humidity, wind, cloud cover).
+
+📝 Plain-language Tips — hydration, umbrellas, sunscreen, safety guidance.
+
+🌍 Interactive Dashboards — maps, graphs, and summaries.
+
+🛰️ Open NASA Data Sources — multiple datasets combined into one view.
+
+⚕️ Health Alerts (roadmap) — heat index, air quality hooks.
+
+🌊 Disaster Readiness Modules (roadmap) — flood & wind advisories.
+
+🌱 Crop Planning Tools (roadmap) — seasonal calendars for farmers.
+
+🌐 Multilingual Support (roadmap) — accessibility across regions.
+
+📤 Data Export (roadmap) — for researchers & policymakers.
+
+🧱 Tech Stack
+
+Python → NumPy, SciPy, pandas, xarray
+
+Geospatial → rasterio, pyproj
+
+Visualization/UI → Streamlit, Plotly
+
+Design System → Figma AI (design tokens, UI specs, auto-layouts)
+
+Illustrations/Assets → Gamma AI (icons, risk visuals)
+
+Video Demos → Canva (storytelling & awareness content)
+
+APIs/Datasets:
+
+NASA POWER (temperature, rainfall)
+
+MERRA-2 (humidity, wind)
+
+MODIS (cloud cover)
+
+GPM (precipitation & extremes)
+
+⚙️ API Configuration
+
+To run SkyWhisper, you’ll need NASA Earth data APIs:
+
+NASA POWER API
+Variables: temperature, rainfall
+
+GES DISC (MERRA-2, MODIS, GPM)
+Access via NASA EarthData Login
+
+Python Environment
+
+conda create -n skywhisper python=3.10
+conda activate skywhisper
+pip install numpy scipy pandas xarray rasterio pyproj streamlit plotly
 
 
-**NASA-powered long-term weather insights with real-life preparedness tips — built on open Earth data, AI, and human-centered design.**  
-Skywhisper turns decades of NASA datasets into **actionable probabilities** (e.g., “70% chance of >35°C”) plus simple guidance (hydrate, umbrella, sunscreen, avoid low-lying areas). Designed with **Figma AI** for faster UI/code handoff and illustrated via **Gamma AI** for lightweight visuals.
+🎨 Design & Communication System
 
-> 🔗 **Figma **  
-> https://www.figma.com/make/M7HhzhhuwtKWbSf4x5g25Q/Weather-Dashboard-Prototype?node-id=0-4&t=8b0fFihGjG30bISK-1
+Figma AI → Ideation, component variants, design tokens, code-ready specs.
 
-> 📄 **Main plan:**  
-> https://drive.google.com/drive/folders/17gY5buTk7rH2Qgmaeid5F-SfQCC5Zc9O
+Gamma AI → Lightweight illustrations, icons, hero images for dashboards.
 
----
+Canva → Used to create video explainers, demos, and awareness campaigns to show SkyWhisper in action. Canva supports:
 
-## ✨ What it does
-- **Probabilities of extremes** by location, timeframe, and variable (heat, heavy rain, wind, humidity, cloud cover).
-- **Plain-language tips** to help people prepare in daily life.
-- **Interactive dashboards** with graphs, maps, and summaries.
+Short feature walkthroughs
 
----
+Storytelling with real-life preparedness examples
 
-## 🛰️ Data sources
-- **NASA POWER** – temperature & rainfall  
-- **MERRA-2** – humidity & wind  
-- **MODIS** – cloud cover  
-- **GPM** – precipitation & extremes
+Social media clips for outreach
 
----
+🔗 Figma Prototype
 
-## 🧠 How it works
-1. Users select **location**, **timeframe**, and **variable**.  
-2. Historical archives are fetched from NASA APIs and bulk files.  
-3. Python pipelines apply **Fourier Transform** to detect seasonal cycles and compute **long-term probabilities** of extremes.  
-4. Results render in dashboards with clear summaries and practical advice.
+https://www.figma.com/make/M7HhzhhuwtKWbSf4x5g25Q/Weather-Dashboard-Prototype?node-id=0-4&t=zrWDnEKptcVR4VEu-1
 
-**Example outputs**
-- *“65% chance of >35°C in April.”*  
-- *“80% likelihood of heavy rain in July — carry an umbrella; secure belongings; avoid low-lying areas.”*
+📄 Main Plan & Flows (Google Drive)
 
----
+https://drive.google.com/drive/folders/17gY5buTk7rH2Qgmaeid5F-SfQCC5Zc9O
 
-## 🎨 Design & Assets (Figma AI + Gamma AI)
-- **Figma AI **: UI ideation, auto-layout refinements, and code-ready specs (design tokens, component variants, layout guidance) to streamline frontend handoff.  
-  Prototype: https://www.figma.com/make/M7HhzhhuwtKWbSf4x5g25Q/Weather-Dashboard-Prototype?node-id=0-4&t=8b0fFihGjG30bISK-1
-- **Main Plan (canonical)**: The authoritative plan, UX flows, and requirements live in **Google Drive** →  https://drive.google.com/drive/folders/17gY5buTk7rH2Qgmaeid5F-SfQCC5Zc9O 
-- **Gamma AI**: Lightweight **illustrations, icons, and hero images** for dashboards and docs that communicate risk levels clearly.
-- canva for video making 
+🎓 Project Education & Impact
 
-🧱 Tech stack
+SkyWhisper is designed for:
 
-Python (NumPy, SciPy, xarray, pandas)
+General public — daily preparedness guidance.
 
-Geospatial (rasterio, pyproj)
+Farmers — seasonal crop planning and water management.
 
-Viz/UI (Streamlit/Plotly)
+Health sectors — anticipating heat stress or air-quality risks.
 
-Design (Figma AI for UI + code specs)
+Policy makers — insights into long-term climate risks for planning.
 
-Assets (Gamma AI for images/illustrations)
+Researchers — access to preprocessed datasets and probability outputs.
 
-APIs (NASA POWER, GES DISC for MERRA-2/MODIS/GPM)
+🗺️ Roadmap
 
-## 🗺️ Roadmap
-*Prototype priorities — exactly as planned.*
+✅ Prototype — Probabilities & dashboards
+🔜 Health alerts, disaster modules, crop planning
+🌐 Multilingual support
+📤 Research/policy data exports
 
-- Health alerts (heat index, air-quality hooks)
-  
-- Disaster readiness modules (flood/wind advisories)
-  
-- Crop-planning tools & calendars
-  
-- Multilingual support
-  
-- Data export for researchers & policymakers
+🙏 Acknowledgements
 
-## 🔭 Project status & next steps
-Skywhisper+ is a **prototype**. We are focusing solely on the items in the roadmap:
-1) Health alerts
-   
-2) Disaster readiness modules
- 
-3) Crop-planning tools & calendars
-   
-4) Multilingual support
-   
-5) Data export for researchers & policymakers
+NASA Earth Science Division — for open datasets (POWER, MERRA-2, MODIS, GPM).
 
+Figma AI — for rapid UI prototyping & design-to-code workflow.
+
+Gamma AI — for lightweight illustrations and risk communication visuals.
+
+Canva — for impactful storytelling and awareness videos.
+
+Open-source community — Python, Streamlit, Plotly, and geospatial libraries.
 
 ⚠️ Disclaimer
 
-Skywhisper provides long-term probabilities and general preparedness suggestions.
+SkyWhisper provides long-term probabilities and general preparedness suggestions.
 It is not a real-time warning system and should not be used for emergency decision-making.
-For immediate hazards, always consult official weather and emergency services.
-
-
+For immediate hazards, always consult official weather & emergency services.
