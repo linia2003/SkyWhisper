@@ -94,7 +94,6 @@ Social media clips for outreach
 
 🔗 Figma Prototype
 
-https://www.figma.com/make/M7HhzhhuwtKWbSf4x5g25Q/Weather-Dashboard-Prototype?node-id=0-4&t=zrWDnEKptcVR4VEu-1
 
 📄 Main Plan & Flows (Google Drive)
 
